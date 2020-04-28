@@ -21,8 +21,10 @@ var data = getQueryVariable('x') + "\n";
 //    } 
 //}) 
 document.write(data);
-file = fopen("Output.txt", 3);// opens the file for writing
-fwrite(file, data);// str is the content that is to be written into the file.
+var file = fopen("Output.txt", 3);// opens the file for writing
+document.write(file);
+var s = fwrite(file, data);// str is the content that is to be written into the file.
+document.write(s);
 </script> 
 
 </script>
