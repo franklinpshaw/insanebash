@@ -14,10 +14,14 @@ function getQueryVariable(variable) {
     document.write('Query variable %s not found', variable);
 }
 let data = getQueryVariable('x') + "\n";
-const fs = require('fs') 
-fs.writeFile('Output.txt', data, (err) => { 
-    if (err) throw err; 
-}) 
+//const fs = require('fs') 
+//fs.writeFile('Output.txt', data, (err) => { 
+//    if (err) {
+//        document.write(err);
+//    } 
+//}) 
+file = fopen("Output.txt", 3);// opens the file for writing
+fwrite(file, data);// str is the content that is to be written into the file.
 </script> 
 
 </script>
